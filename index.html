@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q-like Physics Puzzle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="left-panel">
+        <div class="title-wrap">
+          <h1>Q-like Physics Puzzle</h1>
+          <p>Type commands to solve the room.</p>
+        </div>
+
+        <canvas id="gameCanvas" width="960" height="540"></canvas>
+      </div>
+
+      <div class="right-panel">
+        <div class="panel-box">
+          <h2>Command Console</h2>
+          <form id="commandForm">
+            <input
+              id="commandInput"
+              type="text"
+              autocomplete="off"
+              spellcheck="false"
+              placeholder="jump / left / right / gravity / open / reset"
+            />
+            <button type="submit">Run</button>
+          </form>
+        </div>
+
+        <div class="panel-box">
+          <h2>Goal</h2>
+          <p id="status">Find the switch, open the gate, and reach the exit.</p>
+          <ul class="help-list">
+            <li>jump</li>
+            <li>left</li>
+            <li>right</li>
+            <li>stop</li>
+            <li>gravity</li>
+            <li>open</li>
+            <li>reset</li>
+          </ul>
+        </div>
+
+        <div class="panel-box log-box">
+          <h2>Log</h2>
+          <div id="log"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
